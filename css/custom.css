@@ -1,0 +1,98 @@
+#panel-one {
+  background: #F36744;
+  background: linear-gradient(180deg, #F36744 15%, #F9A35C 80%, #F4C95D 100%);
+  color: floralwhite;
+}
+
+.panel {
+  height: 100vh;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 1vw;
+  font-size: 1.2em;
+  font-family: 'Taviraj', sans-serif;
+}
+
+nav ul {
+  margin: 0;
+  align-content: end;
+  padding: 0 1.1vw;
+  cursor: pointer;
+}
+
+nav {
+  padding: 1.2vh 0;
+  margin-bottom: 3vh;
+}
+
+#brand {
+  font-family: 'Cedarville Cursive', cursive;
+  font-size: 1.5em;
+}
+
+.flex {
+  display: flex;
+}
+
+.w-100 {
+  width: 100vw;
+}
+
+.right {
+  margin-left: auto;
+}
+
+.center {
+  margin: auto;
+}
+
+#main_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  margin-left: 3vw;
+  font-family: 'Taviraj', serif;
+  font-weight: lighter !important;
+  top: 47vh;
+  transform: translateY(-50%);
+}
+
+#main_content h1 {
+  font-size: 6em;
+  margin: 1vh 0;
+}
+
+#main_content h2 {
+  margin-top: 0;
+  font-size: 3em;
+}
+
+#arrows_container {
+  position: fixed;
+  bottom: 2vh;
+}
+
+#arrows div {
+  width: 1.2vh;
+  height: 1.2vh;
+  border-bottom: 2px solid #ffffff;
+  border-right: 2px solid #ffffff;
+  /*box-shadow: 0 2px 1px -2px #888888;*/
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  animation: .8s jump infinite ease-in-out alternate;
+}
+
+@keyframes jump {
+  from {
+    margin-bottom: -.35vh;
+  }
+  to {
+    margin-bottom: .1vh;
+  }
+}
