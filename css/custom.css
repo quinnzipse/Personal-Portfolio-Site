@@ -1,11 +1,15 @@
-#panel-one {
-  background: #F36744;
-  background: linear-gradient(180deg, #F36744 15%, #F9A35C 80%, #F4C95D 100%);
-  color: floralwhite;
+html {
+  background: #E07357;
+  background: linear-gradient(180deg, #E07357 10%, #E8A56E 50%, #E3C26D 100%);
+}
+
+h1, h2, h3, h4, h5, h6, p, span, small {
+  font-family: 'Taviraj', serif;
 }
 
 .panel {
-  height: 100vh;
+  height: 90vh;
+  color: floralwhite;
 }
 
 nav li {
@@ -49,32 +53,32 @@ nav {
 }
 
 #main_content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  min-height: 100vh;
+  position: absolute;
   margin-left: 3vw;
-  font-family: 'Taviraj', serif;
   font-weight: lighter !important;
   top: 47vh;
   transform: translateY(-50%);
 }
 
-#main_content h1 {
+h1 {
   font-size: 6em;
+}
+
+#main_content h1 {
   margin: 1vh 0;
+}
+
+h2 {
+  font-size: 3em;
 }
 
 #main_content h2 {
   margin-top: 0;
-  font-size: 3em;
 }
 
 #arrows_container {
   position: fixed;
-  bottom: 2vh;
+  bottom: 2.5vh;
 }
 
 #arrows div {
@@ -95,4 +99,69 @@ nav {
   to {
     margin-bottom: .1vh;
   }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 0;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  color: floralwhite;
+}
+
+#contact-panel {
+  background: linear-gradient(180deg, #333333, #3b3b3b);
+  color: floralwhite;
+  height: 50vh;
+}
+
+#contact-container {
+  display: flex;
+  width: 100vw;
+  margin-top: -5vh;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+#wave {
+  position: relative;
+  top: -10vh;
+  height: 15vh;
+  z-index: -1;
+}
+
+#wave svg {
+  fill: #333333;
+  stroke: none;
+}
+
+#contact-content a {
+  font-size: 2.3rem;
+  color: floralwhite;
+  margin: 0 1.2vw;
+}
+
+#contact-content a :hover {
+  transition: color 200ms;
+  color: lightgray;
+}
+
+#about-panel {
+  padding: 0 5vw;
+}
+
+#about-panel p {
+  font-size: 1.6rem;
+  width: 75%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#what-i-bring {
+  margin-top: 10vh;
+  margin-right: 3vw;
+  text-align: right;
 }

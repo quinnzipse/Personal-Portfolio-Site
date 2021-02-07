@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Quinn Zipse - Home</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -18,8 +18,12 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Cormorant+Garamond:wght@500&family=Dancing+Script&family=Eczar&family=Montserrat&family=Rubik:wght@300&family=Taviraj:wght@100;200&display=swap"
     rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+        integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
   <!-- Place favicon.ico in the root directory -->
 
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/custom.css">
   <link rel="stylesheet" href="css/main.css">
@@ -28,49 +32,85 @@
 </head>
 
 <body>
-<div id="panel-one" class="panel">
-  <header>
-    <nav>
+<header>
+  <nav>
+    <div class="flex w-100">
+      <ul>
+        <li id="brand">Quinn Zipse</li>
+      </ul>
+      <ul class="right">
+        <li>Blog</li>
+        <li>Projects</li>
+        <li>About Me</li>
+        <li>Music</li>
+      </ul>
+    </div>
+  </nav>
+</header>
+<main>
+  <div id="panel-one" class="panel">
+
+    <!-- Add your site or application content here -->
+    <div id="main_content">
+      <!--    <p style="font-size: 2rem">Hello World! I'm </p>-->
+      <h1>Quinn Zipse</h1>
+      <h2>Software Engineer & Cybersecurity Enthusiast</h2>
+    </div>
+
+    <div id="arrows_container">
       <div class="flex w-100">
-        <ul>
-          <li id="brand">Quinn Zipse</li>
-        </ul>
-        <ul class="right">
-          <li>Blog</li>
-          <li>Projects</li>
-          <li>About Me</li>
-          <li>Music</li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-
-  <!-- Add your site or application content here -->
-  <div id="main_content">
-    <!--    <p style="font-size: 2rem">Hello World! I'm </p>-->
-    <h1>Quinn Zipse</h1>
-    <h2>Software Engineer & Cybersecurity Enthusiast</h2>
-  </div>
-
-  <div id="arrows_container">
-    <div class="flex w-100">
-      <!--      <div class="center">-->
-      <!--        <small>Scroll for more info!</small>-->
-      <!--      </div>-->
-    </div>
-    <div class="flex w-100">
-      <div id="arrows" class="center">
-        <div></div>
-        <div></div>
-        <div></div>
+        <div id="arrows" class="center">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
       </div>
     </div>
   </div>
-</div>
-<div id="about_panel" class="panel">
-
-</div>
-
+  <div id="about-panel" style="padding-left: 3vw;" class="panel">
+    <div data-aos="fade-right" data-aos-duration="1000" class="information">
+      <h2>Hi, I'm Quinn,</h2>
+      <p>an undergraduate student at University of Wisconsin - La Crosse majoring in Computer Science and minoring
+        in Mathematics. In my free time, I like to continue to learn by building open-source projects.
+        The different fields of Computer Science I'm interested in include: Robotics, Computer Vision, Web Development,
+        and
+        Cybersecurity!</p>
+    </div>
+    <div data-aos="fade-left" data-aos-duration="1000" class="right" id="what-i-bring">
+      <h2>How can I help?</h2>
+      <p>an undergraduate student at University of Wisconsin - La Crosse majoring in Computer Science and minoring
+        in Mathematics. In my free time, I like to continue to learn by building open-source projects.
+        The different fields of Computer Science I'm interested in include: Robotics, Computer Vision, Web
+        Development,
+        and
+        Cybersecurity!</p>
+    </div>
+  </div>
+  <div id="contact-panel">
+    <div style="overflow: hidden;" id="wave">
+      <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+        <!--      <path d="M0.00,49.98 C213.03,155.42 288.66,9.38 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"></path>-->
+        <path d="M-1.41,36.02 C207.38,190.95 303.33,-32.06 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"></path>
+      </svg>
+    </div>
+    <div id="contact-container">
+      <div>
+        <h2>Connect With Me!</h2>
+        <div id="contact-content">
+          <a href="https://instagram.com/quinn.zipse"><i class="fab fa-instagram"></i></a>
+          <a href="https://facebook.com/quinnzipse"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://linkedin.com/in/quinnzipse"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/quinnzipse"><i class="fab fa-github"></i></a>
+          <a href="https://twitter.com/quinnzipse"><i class="fab fa-twitter"></i></a>
+          <a href="mailto:heyitsme@quinnzipse.dev"><i class="far fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 <script src="js/vendor/modernizr-3.11.2.min.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
