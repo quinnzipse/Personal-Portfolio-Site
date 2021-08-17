@@ -1,133 +1,302 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title>Quinn Zipse - Home</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <meta charset="utf-8">
-  <title>Quinn Zipse - Home</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="apple-touch-icon" href="icon.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Cormorant+Garamond:wght@500&family=Dancing+Script&family=Eczar&family=Montserrat&family=Rubik:wght@300&family=Taviraj:wght@100;200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+      integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
+      crossorigin="anonymous"
+    />
+    <!-- Place favicon.ico in the root directory -->
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Cormorant+Garamond:wght@500&family=Dancing+Script&family=Eczar&family=Montserrat&family=Rubik:wght@300&family=Taviraj:wght@100;200&display=swap"
-    rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
-        integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
-  <!-- Place favicon.ico in the root directory -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/normalize.css" />
 
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/custom.css">
-  <link rel="stylesheet" href="css/main.css">
-
-  <meta name="theme-color" content="#fafafa">
-</head>
-
-<body>
-<header>
-  <nav>
-    <div class="flex w-100">
-      <ul>
-        <li id="brand">Quinn Zipse</li>
-      </ul>
-      <ul class="right">
-        <li>Blog</li>
-        <li>Projects</li>
-        <li>About Me</li>
-        <li>Music</li>
-      </ul>
-    </div>
-  </nav>
-</header>
-<main>
-  <div id="panel-one" class="panel">
-
-    <!-- Add your site or application content here -->
-    <div id="main_content">
-      <!--    <p style="font-size: 2rem">Hello World! I'm </p>-->
-      <h1>Quinn Zipse</h1>
-      <h2>Software Engineer & Cybersecurity Enthusiast</h2>
-    </div>
-
-    <div id="arrows_container">
-      <div class="flex w-100">
-        <div id="arrows" class="center">
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
+    <meta name="theme-color" content="#fafafa" />
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+  </head>
+  <body style="background-color: #fefefe; min-height: 100vh">
+    <div id="splash_screen">
+      <div id="splash_container" class="d-flex" style="min-height: 100vh">
+        <svg
+          xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.1"
+          xmlns:cc="http://creativecommons.org/ns#"
+          xmlns:dc="http://purl.org/dc/elements/1.1/"
+          viewBox="0 0 182 44"
+          id="_signature"
+        >
+          <g stroke="white" stroke-width="1.4" fill="none">
+            <path
+              stroke-linejoin="round"
+              d="m24.776 42.495c-13.485-1.428-23.818-6.475-23.618-15.63 0.4647-15.273 15.615-23.263 26.976-23.618 5.4414-0.15362 9.8023 2.3863 10.188 5.7888 0.87012 7.6694-19.219 15.63-19.219 15.63s17.858-6.5703 24.66 2.1997c2.7846 3.5903-11.809 10.651-11.809 10.651s-8.787 3.356-7.6412-0.23155c1.7656-5.5283 16.79-10.101 18.408-10.304 3.1692-0.39686 7.0954-0.40839 7.9886 0.11578 1.3366 0.78441-1.6788 4.139-0.92621 4.8626 0.75254 0.7236 3.8206-2.5471 3.9364-1.9682 0.11578 0.57888-0.63677 2.6339 0.57888 3.0102 1.2156 0.37627 2.3155-1.0999 4.2837-1.5051 1.9682-0.40522 1.8235-0.43416 3.5891-0.11578s2.1129 0.63677 3.4733 1.3893c1.3604 0.75254 0.86832 2.2287 1.9682 1.6209 1.0999-0.60782 1.4183-4.1679 2.4313-4.0522 1.013 0.11578 0.02894 5.3836 1.6209 4.5153 1.5919-0.86832 4.7468-7.9886 4.7468-7.9886s-0.8277 4.0448 0 3.9364c3.1288-0.40993 8.1043-2.576 14.472-3.3575 6.3677-0.78149 8.6641-0.35696 10.999 0.23155 1.9203 0.48408 2.6628 2.3155 2.6628 2.3155"
+              stroke-linecap="round"
+              class="autograph__path"
+            />
+            <g>
+              <path
+                d="m113.69 15.751s-1.0999-2.7786-3.5891-2.084c-5.8301 1.627-16.218 7.6808-16.44 15.63-0.45888 16.291 21.086 11.14 22.692 10.999 13.599-1.1962 17.384-9.9553 17.366-14.472-0.0565-14.308-19.074-10.304-21.071-10.073-7.8999 0.91594-10.479 1.5729-10.479 1.5729"
+                class="autograph__path"
+              />
+              <path
+                d="m119.71 1.0471c-2.54 13.915-5.12 27.834-2.54 41.448"
+                stroke-linecap="round"
+                class="autograph__path"
+              />
+              <path
+                d="m133.61 27.791c-6.6229-0.41005-12.592 0.37825-17.366 3.3575"
+                class="autograph__path"
+              />
+              <path
+                d="m131.52 32.77s3.9453-0.13273 8.3359-0.92621c2.4024-0.43416 5.0073-1.7366 7.8728-1.8524 2.8655-0.11578 1.7366 1.4472 3.5891 1.3893 4.632-0.14475 7.9885-0.28944 14.935-0.69466 6.9466-0.40522 9.7529-2.7641 12.851-0.92621 1.7077 1.013 1.3893 3.126 1.3893 3.126"
+                stroke-linecap="round"
+                class="autograph__path"
+              />
+              <path
+                d="m151.7 27.582c-2.32 0.134-2.58 2.525-2.58 2.525l4.4 0.926s2.27-2.747-0.7-3.357c-0.42-0.087-0.79-0.113-1.12-0.094z"
+                class="autograph__path"
+              />
+            </g>
+          </g>
+        </svg>
       </div>
     </div>
-  </div>
-  <div id="about-panel" style="padding-left: 3vw;" class="panel">
-    <div data-aos="fade-right" data-aos-duration="1000" class="information">
-      <h2>Hi, I'm Quinn,</h2>
-      <p>an undergraduate student at University of Wisconsin - La Crosse majoring in Computer Science and minoring
-        in Mathematics. In my free time, I like to continue to learn by building open-source projects.
-        The different fields of Computer Science I'm interested in include: Robotics, Computer Vision, Web Development,
-        and
-        Cybersecurity!</p>
-    </div>
-    <div data-aos="fade-left" data-aos-duration="1000" class="right" id="what-i-bring">
-      <h2>How can I help?</h2>
-      <p>an undergraduate student at University of Wisconsin - La Crosse majoring in Computer Science and minoring
-        in Mathematics. In my free time, I like to continue to learn by building open-source projects.
-        The different fields of Computer Science I'm interested in include: Robotics, Computer Vision, Web
-        Development,
-        and
-        Cybersecurity!</p>
-    </div>
-  </div>
-  <div id="contact-panel">
-    <div style="overflow: hidden;" id="wave">
-      <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
-        <!--      <path d="M0.00,49.98 C213.03,155.42 288.66,9.38 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"></path>-->
-        <path d="M-1.41,36.02 C207.38,190.95 303.33,-32.06 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"></path>
-      </svg>
-    </div>
-    <div id="contact-container">
-      <div>
-        <h2>Connect With Me!</h2>
-        <div id="contact-content">
-          <a href="https://instagram.com/quinn.zipse"><i class="fab fa-instagram"></i></a>
-          <a href="https://facebook.com/quinnzipse"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://linkedin.com/in/quinnzipse"><i class="fab fa-linkedin-in"></i></a>
-          <a href="https://github.com/quinnzipse"><i class="fab fa-github"></i></a>
-          <a href="https://twitter.com/quinnzipse"><i class="fab fa-twitter"></i></a>
-          <a href="mailto:heyitsme@quinnzipse.dev"><i class="far fa-envelope"></i></a>
+    <main>
+      <section id="image-banner" style="">
+        <picture>
+          <!--      <source media="(min-width:650px)" srcset="img/background_road.jpg">-->
+          <img
+            src="img/uwl_banner.jpg"
+            alt="banner"
+            style="width: 100vw; height: 30vh; object-fit: cover"
+          />
+        </picture>
+      </section>
+      <section id="profile-picture" style="display: flex">
+        <div style="display: block; margin-left: auto; margin-right: auto">
+          <div style="display: flex; width: 100%">
+            <div style="display: block; margin-left: auto; margin-right: auto">
+              <img
+                src="img/headshot.jpg"
+                alt="me!"
+                style="
+                  height: 15vh;
+                  clip-path: circle(50%);
+                  transform: translateY(-50%);
+                  overflow-y: hidden;
+                "
+              />
+            </div>
+          </div>
+          <div
+            id="below-profile-picture"
+            style="display: block; margin-top: -7vh; text-align: center"
+          >
+            <h2 style="margin: 0">Quinn Zipse</h2>
+            <h4 style="margin-top: 1vh; text-align: center">
+              Software Engineer
+            </h4>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
-</main>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"
-        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-<script src="js/vendor/modernizr-3.11.2.min.js"></script>
-<script src="js/plugins.js"></script>
-<script src="js/main.js"></script>
+      </section>
+      <section
+        id="content"
+        class="uk-container uk-margin-small-top uk-margin-medium-bottom"
+      >
+        <div uk-grid>
+          <div class="uk-width-1-">
+            <ul class="uk-subnav uk-subnav-divider">
+              <li class="uk-active"><a href="home">Info</a></li>
+              <li><a href="work">Work</a></li>
+              <li><a href="projects">Projects</a></li>
+            </ul>
+          </div>
+          <div id="cards" class="uk-width-expand">
+            <div class="uk-child-width-expand@s uk-text-center" uk-grid>
+              <div>
+                <div
+                  class="uk-card uk-border-rounded uk-card-default uk-card-body"
+                  style="min-height: 45vh"
+                >
+                  <div uk-grid>
+                    <div class="uk-width-1-5">
+                      <span>About Me</span>
+                    </div>
+                    <div class="uk-width-4-5">
+                      <span class="uk-text-right"
+                        >Born and raised in Southeast Minnesota. Full-time
+                        student at The University of Wisconsin - La Crosse.
+                        Majoring in Computer Science, Class of 2022. Tesla and
+                        Google fanboy. Currently an intern at AgVantage
+                        Software, Inc. where I develop web apps for agricultural
+                        co-ops around the nation.</span
+                      >
+                    </div>
+                    <div class="uk-width-1-5">
+                      <span>Where to Find Me</span>
+                    </div>
+                    <div class="uk-width-4-5">
+                      <span class="uk-text-right"
+                        >Linked In, Instagram, Facebook, Twitter, Email</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="uk-child-width-expand@s uk-text-center uk-hidden"
+              uk-grid
+            >
+              <div>
+                <div class="uk-card uk-card-default uk-card-body">
+                  Spotify API Demo
+                </div>
+              </div>
+              <div>
+                <div class="uk-card uk-card-default uk-card-body">
+                  Content Aware Cropping
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="footer"></section>
+    </main>
+  </body>
 
-<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-<script>
-  window.ga = function () {
-    ga.q.push(arguments)
-  };
-  ga.q = [];
-  ga.l = +new Date;
-  ga('create', 'G-HZHGDSL023', 'auto');
-  ga('set', 'anonymizeIp', true);
-  ga('set', 'transport', 'beacon');
-  ga('send', 'pageview')
-</script>
-<script src="https://www.google-analytics.com/analytics.js" async></script>
-</body>
+  <style>
+    #splash_screen {
+      position: absolute;
+      min-height: 100vh;
+      width: 100vw;
+      background-color: rgb(21, 17, 56);
+      transition: 1350ms background-color;
+    }
 
+    #splash_container {
+      width: 50%;
+      height: 100%;
+      margin: auto;
+      line-height: 100vh;
+    }
+
+    svg {
+      display: inline-block;
+      vertical-align: middle;
+      line-height: normal;
+      opacity: 1;
+      transition: 750ms opacity;
+    }
+
+    .autograph__path {
+      animation-timing-function: linear;
+      animation-fill-mode: forwards;
+      opacity: 1;
+      animation-name: line;
+    }
+
+    .animated {
+      opacity: 1;
+      animation-name: line;
+    }
+
+    @keyframes line {
+      100% {
+        stroke-dashoffset: 0;
+      }
+    }
+
+    main {
+      display: none;
+    }
+  </style>
+  <script>
+    setInterval(calcPaths, 9500);
+
+    function calcPaths(totalDur) {
+      // unset 'animated' class to body which will reset the animation
+      document.body.classList.remove("animated");
+
+      // get all SVG elements - lines and dots
+      const paths = document.querySelectorAll(".autograph__path");
+      // prepare path length variable
+      let len = 0;
+      // prepare animation delay length variable
+      let delay = 0;
+
+      // escape if no elements found
+      if (!paths.length) {
+        return false;
+      }
+
+      // set duration in seconds of animation to default if not set
+      const totalDuration = totalDur || 5;
+
+      // calculate the full path length
+      paths.forEach((path) => {
+        const totalLen = path.getTotalLength();
+        len += totalLen;
+      });
+
+      paths.forEach((path) => {
+        console.log(path);
+        const pathElem = path;
+        // get current path length
+        const totalLen = path.getTotalLength();
+        // calculate current animation duration
+        const duration = (totalLen / len) * totalDuration;
+
+        // set animation duration and delay
+        pathElem.style.animationDuration = `${
+          duration < 0.2 ? 0.2 : duration
+        }s`;
+        pathElem.style.animationDelay = `${delay}s`;
+
+        // set dash array and offset to path length - this is how you hide the line
+        pathElem.setAttribute("stroke-dasharray", totalLen);
+        pathElem.setAttribute("stroke-dashoffset", totalLen);
+
+        // set delay for the next path - added .2 seconds to make it more realistic
+        delay += duration + 0.15;
+      });
+
+      // set 'animated' class to body which will start the animation
+      document.body.classList.add("animated");
+      setTimeout(function () {
+        document.getElementById("splash_screen").style.backgroundColor =
+          "transparent";
+        document.getElementById("_signature").style.opacity = 0;
+      }, (totalDuration + delay / 2) * 1000);
+
+      return true;
+    }
+
+    calcPaths(2);
+  </script>
 </html>
