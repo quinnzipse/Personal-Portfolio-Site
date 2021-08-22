@@ -1,22 +1,102 @@
-html {
-  background: #E07357;
-  background: linear-gradient(180deg, #E07357 10%, #E8A56E 50%, #E3C26D 100%);
+:root {
+  --shade-0: #070a0d;
+  --shade-1: #0e141b;
+  --shade-2: #151e28;
+  --shade-3: #1c2835;
+  --shade-4: #233243;
+  --shade-5: #2a3c50;
+  --shade-6: #31465e;
+  --shade-7: #38506b;
+  --shade-8: #3f5a78;
+  --shade-9: #466486;
+  --shade-10: #4d6e93;
+  --shade-11: #5478a0;
+  --shade-12: #5f82ab;
+  --shade-13: #6c8cb2;
+  --shade-14: #7996b9;
+  --shade-15: #87a0c0;
+  --shade-16: #94aac7;
+  --shade-17: #a1b5ce;
+  --shade-18: #afc0d5;
+  --shade-19: #bccadc;
+  --shade-20: #cad5e3;
+  --shade-21: #d7dfea;
+  --shade-22: #e4eaf1;
+  --shade-23: #f2f5f8;
+  --shade-24: #ffffff;
+  --dark-background: var(--shade-3);
+  --dark-text: var(--shade-22);
+  --light-background: var(--shade-21);
+  --light-text: var(--shade-5);
 }
 
-h1, h2, h3, h4, h5, h6, p, span, small {
-  font-family: 'Taviraj', serif;
+html {
+  /* background: var(--dark-background); */
+  background: var(--light-background);
+}
+
+main {
+  margin: 0 3vw;
+  color: var(--light-text);
+  /* color: var(--dark-text); */
+  font-family: "Montserrat", serif;
+}
+
+#main_content {
+  height: 100vh;
+  display: flex;
+}
+
+#main_content h1 {
+  margin: 1vh 0;
+}
+
+#main_content h2 {
+  margin-top: 0;
+}
+
+#main_content button {
+  background-color: var(--shade-12);
+  box-shadow: 1px 1px 5px 1px var(--shade-4);
+  border: none;
+  color: var(--dark-text);
+  padding: 0.5em 1em;
+  font-size: 1.3rem;
+  border-radius: 7%;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+#main_content button:hover {
+  transition: 300ms background-color;
+  background-color: var(--shade-8);
+}
+
+h1 {
+  font-size: 7em;
+  color: var(--shade-2);
+}
+
+h2 {
+  font-size: 4em;
+  color: var(--shade-2);
+}
+
+h3 {
+  font-size: 2.5em;
+  color: var(--shade-1);
 }
 
 .panel {
   height: 90vh;
-  color: floralwhite;
+  color: var(--shade-22);
 }
 
 nav li {
   display: inline-block;
   margin: 0 1vw;
   font-size: 1.2em;
-  font-family: 'Taviraj', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 nav ul {
@@ -32,7 +112,7 @@ nav {
 }
 
 #brand {
-  font-family: 'Cedarville Cursive', cursive;
+  font-family: "Cedarville Cursive", cursive;
   font-size: 1.5em;
 }
 
@@ -41,7 +121,7 @@ nav {
 }
 
 .w-100 {
-  width: 100vw;
+  width: 100%;
 }
 
 .right {
@@ -52,53 +132,8 @@ nav {
   margin: auto;
 }
 
-#main_content {
-  position: absolute;
-  margin-left: 3vw;
-  font-weight: lighter !important;
-  top: 47vh;
-  transform: translateY(-50%);
-}
-
-h1 {
-  font-size: 6em;
-}
-
-#main_content h1 {
-  margin: 1vh 0;
-}
-
-h2 {
-  font-size: 3em;
-}
-
-#main_content h2 {
-  margin-top: 0;
-}
-
-#arrows_container {
-  position: fixed;
-  bottom: 2.5vh;
-}
-
-#arrows div {
-  width: 1.2vh;
-  height: 1.2vh;
-  border-bottom: 2px solid #ffffff;
-  border-right: 2px solid #ffffff;
-  /*box-shadow: 0 2px 1px -2px #888888;*/
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  animation: .8s jump infinite ease-in-out alternate;
-}
-
-@keyframes jump {
-  from {
-    margin-bottom: -.35vh;
-  }
-  to {
-    margin-bottom: .1vh;
-  }
+.vertical-center {
+  margin: auto 0;
 }
 
 /* width */
@@ -106,62 +141,115 @@ h2 {
   width: 0;
 }
 
-header {
-  position: sticky;
-  top: 0;
-  color: floralwhite;
+/* Project Card Styling */
+.project-card {
+  border-radius: 5px;
+  display: grid;
+  background-color: var(--shade-19);
+  grid-template-columns: repeat(2, 1fr);
+  margin: 2em 0;
+  padding: 2em;
+  gap: 1em;
 }
 
-#contact-panel {
-  background: linear-gradient(180deg, #333333, #3b3b3b);
-  color: floralwhite;
-  height: 50vh;
+.project-img {
+  grid-column: 2;
+  padding: 1em;
 }
 
-#contact-container {
-  display: flex;
-  width: 100vw;
-  margin-top: -5vh;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
+.project-img > img {
+  max-width: 100%;
+  border-radius: 5px;
 }
 
-#wave {
-  position: relative;
-  top: -10vh;
-  height: 15vh;
-  z-index: -1;
+/* General Card */
+
+.project-body > p,
+.foss-header > p {
+  font-size: 1.5em;
 }
 
-#wave svg {
-  fill: #333333;
-  stroke: none;
+.project-body > span,
+.foss-header > span {
+  font-size: 2em;
+  margin-left: 0.5em;
+}
+
+.project-body > small,
+.foss-header > small {
+  font-size: 1em;
+}
+
+.project-body > span > a,
+.foss-header > span > a {
+  color: var(--light-text);
+}
+
+.project-body > h3,
+.foss-header > h3 {
+  display: inline-block;
+  margin-bottom: 0.2em;
+}
+
+/* Foss specific styling */
+.foss-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2em;
+  margin: 2em 0;
+  background-color: var(--shade-19);
+  border-radius: 4px;
+}
+.foss-header > h3 {
+  margin: 0;
+}
+
+.foss-header {
+  margin: auto 0;
+}
+.foss-body {
+  margin: auto 0;
+}
+
+/* Footer Styling */
+#footer {
+  background-color: var(--shade-2);
+  padding: 3vw;
+  margin: 0 -3vw;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+#copyright {
+  margin: auto;
+}
+
+#footer ul {
+  list-style-type: none;
+}
+
+#footer p,
+#footer li a {
+  color: var(--shade-15);
+  text-decoration: none;
+}
+
+#footer li a:hover {
+  color: var(--shade-18);
+}
+
+#contact-content {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
 }
 
 #contact-content a {
-  font-size: 2.3rem;
-  color: floralwhite;
-  margin: 0 1.2vw;
+  margin: auto;
+  font-size: 2rem;
+  color: var(--shade-15);
 }
 
 #contact-content a :hover {
   transition: color 200ms;
-  color: lightgray;
-}
-
-#about-panel {
-  padding: 0 5vw;
-}
-
-#about-panel p {
-  font-size: 1.6rem;
-  width: 75%;
-  font-family: 'Open Sans', sans-serif;
-}
-
-#what-i-bring {
-  margin-top: 10vh;
-  margin-right: 3vw;
-  text-align: right;
+  color: var(--shade-18);
 }
