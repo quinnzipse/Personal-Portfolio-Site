@@ -3,13 +3,16 @@
   <head>
     <meta charset="utf-8" />
     <title>Quinn Zipse - Home</title>
-    <meta name="description" content="" />
+    <meta
+      name="description"
+      content="Hi, I'm Quinn Zipse, a software engineer from Minnesota. I like Computer Vision, Machine Learning, and Cybersecurity. Come check out my website!"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <meta property="og:title" content="Quinn Zipse" />
     <meta property="og:type" content="Software Engineer" />
     <meta property="og:url" content="https://quinnzipse.dev" />
-    <meta property="og:image" content="" />
+    <meta property="og:image" content="img/seo_image.png" />
 
     <link rel="manifest" href="site.webmanifest" />
     <link rel="apple-touch-icon" href="icon.png" />
@@ -40,74 +43,144 @@
         <div class="vertical-center">
           <h1>Quinn Zipse</h1>
           <h2>Software Engineer & Data Scientist</h2>
-          <button>Portfolio</button>
-          <button>FOSS Contributions</button>
-          <button>Contact Me</button>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#foss">FOSS Contributions</a>
+          <a href="#footer">Contact Me</a>
         </div>
       </div>
       <section id="portfolio">
-        <h2>Portfolio</h2>
+        <h2 id="portfolio">Portfolio</h2>
         <div class="project-card">
           <div class="project-body">
-            <h3>Project-1 Name</h3>
+            <h3>Sky Eye Android App</h3>
             <span>
-              <a href="https://github.com/quinnzipse/{project-repo}">
+              <a href="https://github.com/quinnzipse/">
                 <i class="fab fa-github"></i>
               </a>
             </span>
             <br />
-            <small>Tag-1 Tag-2 Tag-3 Tag-4</small>
+            <small>Kotlin&emsp;Android Development</small>
             <p>
-              Short description of the project that I have created. Hopefully
-              this description can showcase any technology or hardships I went
-              through while building it.
+              Created a native android application to view nearby airplanes and
+              their flight paths using Android Studio and Kotlin.
+              <br />
+              <br />
+              Features:
             </p>
+            <ul>
+              <li>See nearby planes</li>
+              <li>Save planes of interest</li>
+              <li>Click on plane to see more info</li>
+            </ul>
           </div>
           <div class="project-img">
             <!--Think about making this a carousel in the future.-->
-            <img src="img/project-img-placeholder.png" />
+            <img src="img/SkyEye_demo.png" />
           </div>
         </div>
         <div class="project-card">
           <div class="project-body">
-            <h3>Project-2 Name</h3>
+            <h3>Content-Based Image Cropper</h3>
             <span>
-              <a href="https://github.com/quinnzipse/{project2-repo}">
+              <a href="https://github.com/quinnzipse/WebSeamCarver">
                 <i class="fab fa-github"></i>
               </a>
             </span>
             <br />
-            <small>Tag-2 Tag-4 Tag-5 Tag-6</small>
+            <small>
+              Image Processing&emsp;Dynamic Programming&emsp;TypeScript
+            </small>
             <p>
-              Short description of the project that I have created. Hopefully
-              this description can showcase any technology or hardships I went
-              through while building it.
+              Implemented the seam carving algorithm in Java for an Image
+              Processing class. Algorithm identifies edges, then finds the
+              continuous path that crosses the fewest edges in the image, and
+              finally removes that path from the image. The algorithm is
+              repeated until the image is the desired size. Works to stretch and
+              shrink any image asymmetrically.
+            </p>
+            <p>
+              Since the class has ended, I have been working on replicating it
+              in a web environment using TypeScript and Webpack.
             </p>
           </div>
           <div class="project-img">
             <!--Think about making this a carousel in the future.-->
-            <img src="img/project-img-placeholder.png" />
+            <img src="img/Seamcarving_demo.png" />
           </div>
         </div>
         <div class="project-card">
           <div class="project-body">
-            <h3>Project-3 Name</h3>
+            <h3>Personal Portfolio Website</h3>
             <span>
-              <a href="https://github.com/quinnzipse/{project3-repo}">
+              <a href="https://github.com/quinnzipse/personal_site2.0">
                 <i class="fab fa-github"></i>
               </a>
             </span>
             <br />
-            <small>Tag-1 Tag-2 Tag-5 Tag-7</small>
+            <small>HTML&emsp;CSS&emsp;DevOps</small>
             <p>
-              Short description of the project that I have created. Hopefully
-              this description can showcase any technology or hardships I went
-              through while building it.
+              My personal website is how I learned to code! Through many
+              iterations over the years, I have always been the sole
+              contributor! As well as creating the site, I run and maintain it
+              on my cloud server. This site has taught me so much about the
+              DevOps workflow and everything that goes into running a website.
             </p>
           </div>
           <div class="project-img">
             <!--Think about making this a carousel in the future.-->
-            <img src="img/project-img-placeholder.png" />
+            <img src="img/PersonalSite_demo.png" />
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-body">
+            <h3>Color Based Image Search</h3>
+            <span>
+              <a
+                href="https://github.com/quinnzipse/DigitalImaging/tree/master/src/hw3"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+            </span>
+            <br />
+            <small>Image Processing&emsp;Color Histograms&emsp;Java</small>
+            <p>
+              Created a Java application that can search a database of images in
+              seconds to find similar images. Results are displayed as an HTML
+              file.
+            </p>
+            <p>
+              How it works: The application generates each image's color
+              histogram and stores it in a database. When querying, the
+              application simply generates a color histogram for the query image
+              and compares it to the database.
+            </p>
+          </div>
+          <div class="project-img">
+            <!--Think about making this a carousel in the future.-->
+            <img src="img/image_search_demo.png" />
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-body">
+            <h3>Music Web App</h3>
+            <span>
+              <a href="https://github.com/quinnzipse/quinnzipse.dev">
+                <i class="fab fa-github"></i>
+              </a>
+            </span>
+            <br />
+            <small>JS&emsp;CSS&emsp;WebSockets&emsp;Cron</small>
+            <p>
+              Engineered an application to display my now playing music from
+              Spotify. Utilizes Cron and WebSockets to periodically update.
+              Enables users to add songs to my queue and see what others have
+              added.
+            </p>
+            <p>Check it out <a href="https://quinnzipse.dev/music">here</a>!</p>
+          </div>
+          <div class="project-img">
+            <!--Think about making this a carousel in the future.-->
+            <img src="img/music_demo.png" />
           </div>
         </div>
       </section>
@@ -115,24 +188,19 @@
         <h2>FOSS Contributions</h2>
         <div class="foss-card">
           <div class="foss-header">
-            <h3>PHPMyAdmin - PR #3423</h3>
+            <h3>PHPMyAdmin - PR #16899</h3>
             <span>
-              <a href="https://github.com/{foss}">
+              <a href="https://github.com/phpmyadmin/phpmyadmin/pull/16899">
                 <i class="fab fa-github"></i>
               </a>
             </span>
             <br />
-            <small>Tag-1 Tag-2 Tag-3</small>
+            <small>PHP U2F Yubico JavaScript</small>
           </div>
           <div class="foss-body">
             <p>
-              Short description of open source contribution. Lorem ipsum dolor
-              sit amet, consectetur adipiscing elit. Pellentesque eget tempus
-              odio, eu aliquam leo. Ut sollicitudin egestas sem, at pulvinar
-              dolor fermentum ut. Proin sed pellentesque nibh, at ultricies
-              mauris. Cras ultrices fringilla neque, non gravida magna viverra
-              sed. Proin ligula risus, vulputate dignissim ornare eu, venenatis
-              in leo.
+              Updated the U2F (Universal 2nd Factor) error codes in PHPMyAdmin
+              to follow the Yubico specification.
             </p>
           </div>
         </div>
@@ -141,8 +209,8 @@
         <div>
           <ul>
             <li><a href="#">Back to Top</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">FOSS Contributions</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#foss">FOSS Contributions</a></li>
           </ul>
         </div>
         <div id="contact-content">
@@ -169,6 +237,22 @@
           <p id="copyright">© 2021 Quinn Zipse</p>
         </div>
       </section>
+      <div style="display:none;">
+        Quinn Zipse
+        <h1>Quinn Zipse</h1>
+        <h1>Software Engineer</h1>
+        <h2>Quinn Zipse</h2>
+        <h2>Security Engineer</h2>
+        <h3>Quinn Zipse</h3>
+        <h3>Computer Vision</h3>
+        <h4>Quinn Zipse</h4>
+        <h5>Machine Learning</h5>
+        <h6>Quinn Zipse</h6>
+        <h6>Data Science</h6>
+        <small>Quinn Zipse</small>
+        <p>Quinn Zipse</p>
+        <span>Quinn Zipse</span>
+      </div>
     </main>
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="js/plugins.js"></script>

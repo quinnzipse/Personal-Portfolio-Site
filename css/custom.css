@@ -33,6 +33,7 @@
 html {
   /* background: var(--dark-background); */
   background: var(--light-background);
+  scroll-behavior: smooth;
 }
 
 main {
@@ -55,19 +56,20 @@ main {
   margin-top: 0;
 }
 
-#main_content button {
+#main_content a {
   background-color: var(--shade-12);
   box-shadow: 1px 1px 5px 1px var(--shade-4);
   border: none;
   color: var(--dark-text);
   padding: 0.5em 1em;
   font-size: 1.3rem;
-  border-radius: 7%;
+  border-radius: 5px;
   margin-right: 1rem;
   cursor: pointer;
+  text-decoration: none;
 }
 
-#main_content button:hover {
+#main_content a:hover {
   transition: 300ms background-color;
   background-color: var(--shade-8);
 }
@@ -163,7 +165,11 @@ nav {
 }
 
 /* General Card */
+.project-body ul {
+  margin-top: 0;
+}
 
+.project-body li,
 .project-body > p,
 .foss-header > p {
   font-size: 1.5em;
