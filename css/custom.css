@@ -58,12 +58,12 @@ main {
 
 #main_content a {
   background-color: var(--shade-12);
-  box-shadow: 1px 1px 5px 1px var(--shade-4);
+  box-shadow: 1px 1px 10px 1px var(--shade-8);
   border: none;
   color: var(--dark-text);
   padding: 0.5em 1em;
   font-size: 1.3rem;
-  border-radius: 5px;
+  border-radius: 3px;
   margin-right: 1rem;
   cursor: pointer;
   text-decoration: none;
@@ -71,7 +71,9 @@ main {
 
 #main_content a:hover {
   transition: 300ms background-color;
+  transition: 300ms box-shadow;
   background-color: var(--shade-8);
+  box-shadow: 1px 1px 20px 2px var(--shade-8);
 }
 
 h1 {
@@ -159,7 +161,7 @@ nav {
   padding: 1em;
 }
 
-.project-img > img {
+.project-img img {
   max-width: 100%;
   border-radius: 5px;
 }
@@ -246,7 +248,9 @@ nav {
 
 #contact-content {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: 1.5fr repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 12px;
 }
 
 #contact-content a {
@@ -258,4 +262,11 @@ nav {
 #contact-content a :hover {
   transition: color 200ms;
   color: var(--shade-18);
+}
+
+#connect-header {
+  grid-row: 1/3;
+  color: var(--shade-15);
+  margin: auto;
+  font-size: 1.75rem;
 }
