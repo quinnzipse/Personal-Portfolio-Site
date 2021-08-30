@@ -1,7 +1,7 @@
 :root {
-  --colorPrimary-h: 0;
-  --colorPrimary-s: 70%;
-  --colorPrimary-l:60%;
+  --colorPrimary-h: 140;
+  --colorPrimary-s: 60%;
+  --colorPrimary-l:30%;
 
   --lighten-percent: 10%;
   --darken-percent: -15%;
@@ -12,7 +12,7 @@
   --perceived-luminance-lighter: 0;
   --perceived-luminance-darker: 0;
 
-  --contrastThreshold: .48;
+  --contrastThreshold: .47;
 
   --colorPrimary: hsl(
     var(--colorPrimary-h),
@@ -32,6 +32,11 @@
   --colorPrimary-sat: hsl(
     var(--colorPrimary-h),
     calc(var(--colorPrimary-s) + var(--sat-percent)),
+    var(--colorPrimary-l)
+  );
+  --colorPrimary-sater: hsl(
+    var(--colorPrimary-h),
+    calc(var(--colorPrimary-s) + var(--sat-percent)*2),
     var(--colorPrimary-l)
   );
   --colorPrimary-sat-dark: hsl(
@@ -65,9 +70,9 @@
   --nudge_lum: calc(.25 - var(--modified2_range_lum));
 
   --accent: hsl(
-    var(--colorPrimary-h),
-    var(--colorPrimary-s),
-    calc(0.5 * 100%)
+    calc(var(--colorPrimary-h) + 60),
+    calc(var(--colorPrimary-s) - var(--sat-percent)),
+    80%
   );
 
   --switched-l: calc((var(--perceived-luminance) - var(--contrastThreshold)) * -10000000%);
@@ -76,9 +81,19 @@
 
   --text: hsl(0, 0%, var(--switched-l));
   --lighter-text: hsl(0, 0%, var(--switched-l-lighter));
-  --darker-text: hsl(0, 0%, var(switched-l-darker));
+  --darker-text: hsl(0, 0%, var(--switched-l-darker));
+  --secondary-text: hsl(0, 0%, 90%);
 
   --background: var(--colorPrimary);
+}
+
+
+a {
+  color: var(--accent);
+}
+
+.dark-text {
+  --secondary-text: hsl(0, 0%, 10%);
 }
 
 html {
@@ -187,6 +202,10 @@ h3 {
 }
 
 .project-body {
+  color: var(--secondary-text);
+}
+
+.project-body small {
   color: var(--accent);
 }
 
@@ -270,7 +289,7 @@ h3 {
 
 /* Footer Styling */
 #footer {
-  background-color: var(--colorPrimary-sat);
+  background-color: var(--colorPrimary-sater);
   padding: 3vh 3vw;
   margin: 0 -10vw;
   padding: 1vh 10vw;
