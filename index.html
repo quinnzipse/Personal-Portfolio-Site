@@ -28,11 +28,7 @@
       crossorigin="anonymous"
     />
     <!-- Place favicon.ico in the root directory -->
-
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/custom.css" />
-    <link rel="stylesheet" href="css/main.css" />
 
     <meta name="theme-color" content="#fafafa" />
   </head>
@@ -41,11 +37,11 @@
     <main>
       <div id="main_content">
         <div class="vertical-center">
-          <h1>Quinn Zipse</h1>
-          <h2>Software Engineer & Data Scientist</h2>
-          <a href="#portfolio">Portfolio</a>
-          <a href="#foss">FOSS Contributions</a>
-          <a href="#footer">Contact Me</a>
+          <h1>Hi, I am Quinn Zipse!</h1>
+          <h2>Software Engineer</h2>
+          <a href="#portfolio">👷‍♂️ Portfolio</a>
+          <a href="#foss">✍ FOSS Contributions</a>
+          <a href="#footer">📞 Contact Me</a>
         </div>
       </div>
       <section id="portfolio">
@@ -78,6 +74,8 @@
             <img src="img/SkyEye_demo.png" />
           </div>
         </div>
+      <h2 class="section-header" id="portfolio">Portfolio</h2>
+      <section >
         <div class="project-card">
           <div class="project-body">
             <h3>Content-Based Image Cropper</h3>
@@ -112,7 +110,7 @@
           <div class="project-body">
             <h3>Personal Portfolio Website</h3>
             <span>
-              <a href="https://github.com/quinnzipse/personal_site2.0">
+              <a href="https://github.com/quinnzipse/Personal-Portfolio-Site">
                 <i class="fab fa-github"></i>
               </a>
             </span>
@@ -136,7 +134,7 @@
             <h3>Color Based Image Search</h3>
             <span>
               <a
-                href="https://github.com/quinnzipse/DigitalImaging/tree/master/src/hw3"
+                href="https://gist.github.com/quinnzipse/6aee4b7b359778d1c43c0d6fd8ae61f3"
               >
                 <i class="fab fa-github"></i>
               </a>
@@ -158,6 +156,45 @@
           <div class="project-img">
             <!--Think about making this a carousel in the future.-->
             <img src="img/image_search_demo.png" />
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-body">
+            <h3>Sky Eye Android App</h3>
+            <span>
+              <a href="https://github.com/quinnzipse/SkyEye">
+                <i class="fab fa-github"></i>
+              </a>
+            </span>
+            <br />
+            <small>Kotlin&emsp;Android Development</small>
+            <p>
+              Created a native android application to view nearby airplanes and
+              their flight paths using Android Studio and Kotlin.
+              <br />
+              <br />
+              Features:
+            </p>
+            <ul>
+              <li>See nearby planes</li>
+              <li>Save planes of interest</li>
+              <li>Click on plane to see more info</li>
+            </ul>
+          </div>
+          <div class="project-img">
+            <div
+              style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px"
+            >
+              <!--Think about making this a carousel in the future.-->
+              <img
+                style="margin: auto; max-height: 40vh"
+                src="img/SkyEye_demo.png"
+              />
+              <img
+                style="margin: auto; max-height: 40vh"
+                src="img/SkyEye_demo2.png"
+              />
+            </div>
           </div>
         </div>
         <div class="project-card">
@@ -184,8 +221,8 @@
           </div>
         </div>
       </section>
+      <h2 class="section-header">FOSS Contributions</h2>
       <section id="foss">
-        <h2>FOSS Contributions</h2>
         <div class="foss-card">
           <div class="foss-header">
             <h3>PHPMyAdmin - PR #16899</h3>
@@ -212,8 +249,11 @@
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#foss">FOSS Contributions</a></li>
           </ul>
+          <p id="copyright">© 2021 Quinn Zipse</p>
         </div>
+        <div></div>
         <div id="contact-content">
+          <h3 id="connect-header">Connect Online!</h2>
           <a href="https://instagram.com/quinn.zipse"
             ><i class="fab fa-instagram"></i
           ></a>
@@ -229,15 +269,12 @@
           <a href="https://twitter.com/quinnzipse">
             <i class="fab fa-twitter"></i>
           </a>
-          <a href="mailto:quinn@quinnzipse.dev">
+          <a href="mailto:qzipse@outlook.com">
             <i class="far fa-envelope"></i>
           </a>
         </div>
-        <div class="flex">
-          <p id="copyright">© 2021 Quinn Zipse</p>
-        </div>
       </section>
-      <div style="display:none;">
+      <div style="display: none">
         Quinn Zipse
         <h1>Quinn Zipse</h1>
         <h1>Software Engineer</h1>
@@ -254,8 +291,6 @@
         <span>Quinn Zipse</span>
       </div>
     </main>
-    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-    <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
